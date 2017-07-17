@@ -1,0 +1,30 @@
+{
+  "name"        : "solr-orm",
+  "version"     : "0.0.1",
+  "description" : "An attempt to make solr searches a little more user-friendly",
+  "main"        : "index.js",
+
+  "scripts" : {
+    "gulp"  : "gulp",
+    "mocha" : "mocha",
+    "test"  : "gulp test"
+  },
+
+  "author"  : "Matthew Young (mashu.daishi@gmail.com)",
+  "license" : "ISC",
+
+  "dependencies" : {
+    "lodash"  : "4.17.4",
+    "request" : "2.81.0"
+  },
+
+  "devDependencies" : {
+    "cli-table"     : "0.3.1",
+    "colors"        : "1.1.2",
+    "del"           : "3.0.0",
+    "gulp"          : "3.9.1",
+    "gulp-istanbul" : "1.1.2",
+    "gulp-mocha"    : "4.3.1",
+    "should"        : "11.2.1"
+  }
+}
