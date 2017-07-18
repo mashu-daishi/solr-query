@@ -1,4 +1,4 @@
-# solr-orm
+# solr-query
 
 This project is an attempt at making Solr searches a little easier. I'm sure I'm not the only person that's struggled with trying to build a correct query string for Solr.
 
@@ -9,11 +9,11 @@ This is an in-progress project. For now, only Solr /search is supported.
 ## Installing
 
 ```
-npm install solr-orm
+npm install solr-query
 ```
 
 ```js
-const Client = require( 'solr-orm' );
+const Client = require( 'solr-query' );
 
 const solrC = new Client();
 
@@ -24,7 +24,7 @@ solrC.search( searchQuery, searchOptions );
 
 ### Solr Configuration
 
-When spawning a new Client object, you may pass in options to connect to your instance of Solr. The optional parameters are listed in the [config folder](https://github.com/mashu-daishi/solr-orm).
+When spawning a new Client object, you may pass in options to connect to your instance of Solr. The optional parameters are listed in the [config folder](https://github.com/mashu-daishi/solr-query).
 
 ### .search( searchQuery, searchOptions )
 ##### searchQuery
