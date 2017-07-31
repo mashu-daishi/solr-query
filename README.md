@@ -4,7 +4,7 @@ This project is an attempt at making Solr searches a little easier. I'm sure I'm
 
 ### Notes
 
-This is an in-progress project. For now, only Solr /search is supported.
+This is an in-progress project. For now, only Solr /search and /update is supported.
 
 ## Installing
 
@@ -18,6 +18,13 @@ const Client = require( 'solr-query' );
 const solrC = new Client();
 
 solrC.search( searchQuery, searchOptions );
+
+newRequest.save( obj )
+.then( data => {
+	console.log( "data:", data );
+} ).catch( err => {
+	console.log( "err:", err );
+} );
 ```
 
 ## Methods
@@ -55,6 +62,17 @@ options.commonParams = {
 };
 ```
 Please note, if you pass a `q` parameter into this, it **will** override the `searchQuery` that is passed in.
+
+### .save( solrObj )
+##### solrObj
+
+This currently accepts a json object that will be entered verbatim into Solr.
+```js
+solrObj = {
+	"title" : "Kinda Cool",
+	"uid"   : "b5546172-713a-44f8-9105-761158ca75d9"
+}
+```
 
 ## Running the tests
 
