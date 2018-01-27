@@ -1,6 +1,6 @@
 {
   "name": "solr-query",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "An attempt to make solr searches a little more user-friendly",
   "main": "index.js",
   "scripts": {
